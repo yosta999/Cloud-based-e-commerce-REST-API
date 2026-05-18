@@ -1,4 +1,4 @@
-# 🛡️ Cloud-based E-commerce REST API with Neural Network Threat Detection
+# Cloud-based E-commerce REST API with Neural Network Threat Detection
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -9,14 +9,14 @@ A production-ready, secure E-commerce REST API built with **Node.js, Express, an
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 1. 🛍️ Core E-Commerce API
+### 1.  Core E-Commerce API
 - **User Authentication:** Secure registration and login using `bcryptjs` for password hashing and `jsonwebtoken` (JWT) for secure, stateless sessions.
 - **Product Management:** CRUD operations for managing products (Create, Read, Update, Delete). Protected routes ensure only authorized users can modify inventory.
 - **Order Processing:** Users can place orders linked to their accounts and view their order history.
 
-### 2. 🧠 Neural Network Threat Detection (Grade 5 Feature)
+### 2.  Neural Network Threat Detection (Grade 5 Feature)
 - **Custom Logging Middleware:** Intercepts every incoming request, logging the IP address, accessed endpoint, HTTP status code, and response time directly to MongoDB.
 - **Feature Extraction:** Processes raw server logs into normalized metrics (0.0 to 1.0) focusing on:
   - `failedLogins`: High rate of HTTP 401s.
@@ -24,7 +24,7 @@ A production-ready, secure E-commerce REST API built with **Node.js, Express, an
   - `requestRate`: High volume of requests over a short time span.
 - **Brain.js AI Model:** A trained Neural Network evaluates the extracted features and outputs an AI verdict (`"normal"` or `"suspicious"`) along with a confidence score.
 
-### 3. 🔒 Enterprise-Grade Security
+### 3.  Enterprise-Grade Security
 - **Helmet.js:** Secures Express apps by setting various HTTP headers.
 - **Rate Limiting:** Prevents Brute-Force and DDoS attacks by limiting IPs to 100 requests per 15 minutes. Intercepted requests return: `{"error": "You are in queue, try again later"}`.
 - **CORS:** Cross-Origin Resource Sharing enabled.
@@ -32,7 +32,7 @@ A production-ready, secure E-commerce REST API built with **Node.js, Express, an
 
 ---
 
-## 📁 Project Architecture
+##  Project Architecture
 
 ```text
 /
@@ -51,7 +51,7 @@ A production-ready, secure E-commerce REST API built with **Node.js, Express, an
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 ### Prerequisites
 - Node.js (v18+)
@@ -87,7 +87,7 @@ npm test
 
 ---
 
-## 🧪 Testing the API via Postman
+##  Testing the API via Postman
 
 ### 1. Authentication
 - **Register:** `POST /api/auth/register`
